@@ -79,24 +79,24 @@ WSGI_APPLICATION = 'Jinstagram.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '13.57.187.72',
-        'NAME': 'mysql-db',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'PORT': '3306',
-        'OPTIONS': {'charset': 'utf8mb4'},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST': '13.57.187.72',
+#         'NAME': 'mysql-db',
+#         'USER': 'root',
+#         'PASSWORD': 'password',
+#         'PORT': '3306',
+#         'OPTIONS': {'charset': 'utf8mb4'},
+#     }
+# }
 
 
 # Password validation
