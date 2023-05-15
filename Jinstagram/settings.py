@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'Jinstagram.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '54.183.73.90',
+        'HOST': '3.101.78.62',
         'NAME': 'mysql-db',
         'USER': 'root',
         'PASSWORD': 'password',
