@@ -86,30 +86,30 @@ WSGI_APPLICATION = 'Jinstagram.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'HOST': 'db-devops-restart-instance-1.c0yz9ahgb9ne.us-west-1.rds.amazonaws.com',
-#         'NAME': 'restart_devops',
-#         'USER': 'admin',
-#         'PASSWORD': 'hwan12345',
-#         'PORT': '3306',
-#         'OPTIONS': {'charset': 'utf8mb4'},
-#     }
-# }
-
-# secret info를 환경변수로 만든 코드
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': os.environ.get('MYSQL_HOST', 'localhost'),
+        'HOST': 'db-devops-restart-instance-1.c0yz9ahgb9ne.us-west-1.rds.amazonaws.com',
         'NAME': 'restart_devops',
-        'USER': os.environ.get('MYSQL_USER_NAME', 'default_user'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'default_password'),
+        'USER': 'admin',
+        'PASSWORD': 'hwan12345',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
+
+# secret info를 환경변수로 만든 코드
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST': os.environ.get('MYSQL_HOST', 'localhost'),
+#         'NAME': 'restart_devops',
+#         'USER': os.environ.get('MYSQL_USER_NAME', 'default_user'),
+#         'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'default_password'),
+#         'PORT': '3306',
+#         'OPTIONS': {'charset': 'utf8mb4'},
+#     }
+# }
 
 
 # Password validation
