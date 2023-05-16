@@ -90,7 +90,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'db-devops-restart-instance-1.c0yz9ahgb9ne.us-west-1.rds.amazonaws.com',
-        'NAME': 'devops_restart',
+        'NAME': 'db_devops_restart',
         'USER': 'admin',
         'PASSWORD': 'hwan12345',
         'PORT': '3306',
