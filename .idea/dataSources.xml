@@ -22,11 +22,27 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="youtube_devops_rds" uuid="a16a0b5c-2076-4d46-9f9c-274a0b9eeb29">
+    <data-source source="LOCAL" name="@localhost [3]" uuid="cd57cd18-7af7-4fa0-a7fe-0e3548b1a37b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="youtube_devops_rds" uuid="56f6dcb8-8228-4773-b0e1-59666c5c222b">
       <driver-ref>mysql_aurora</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://db-devops-restart-instance-1.c0yz9ahgb9ne.us-west-1.rds.amazonaws.com:3306/youtube_devops</jdbc-url>
+      <jdbc-url>jdbc:mariadb://db-devops-restart-instance-1.c0yz9ahgb9ne.us-west-1.rds.amazonaws.com:3306/restart_devops</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="2dc0e353-5ff9-4fce-8f93-03708be0b4a5">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/Jinstagram/settings.py</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/restart_devops</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
