@@ -90,9 +90,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'db-devops-restart-instance-1.c0yz9ahgb9ne.us-west-1.rds.amazonaws.com',
-        'NAME': 'devops_restart',
-        'USER': 'root',
-        'PASSWORD': 'password',
+        'NAME': 'youtube_devops',
+        'USER': 'admin',
+        'PASSWORD': 'hwan12345',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
