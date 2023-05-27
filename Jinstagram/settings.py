@@ -94,7 +94,11 @@ DATABASES = {
         'USER': 'admin',
         'PASSWORD': 'hwan12345',
         'PORT': '3306',
-        'OPTIONS': {'charset': 'utf8mb4'},
+        # 'OPTIONS': {'charset': 'utf8mb4'}   # 이 코드 아래로 수정
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+            'sql_mode': 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION',
+        },
     }
 }
 

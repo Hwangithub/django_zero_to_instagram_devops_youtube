@@ -17,7 +17,7 @@ class UserTest(TestCase):
         )
 
     def test(self):
-        self.assertEqual(1, 1)
+        self.assertEqual(1, 1)    # A와 B가 같으면 통과, 아니면 실패.
 
     # 정상적으로 회원가입 API호출했을때 200?
     def test_join(self):
@@ -41,5 +41,6 @@ class UserTest(TestCase):
             password="test_password"))
 
         self.assertEqual(response.status_code, 200)
+
 
 
